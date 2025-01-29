@@ -1,6 +1,8 @@
-import React from 'react'
+
 import './footer.css'
 import { FaFacebookF } from 'react-icons/fa'
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 
 function Footer() {
@@ -18,9 +20,9 @@ function Footer() {
         <li><a href="#contact">Contact</a></li>
      </ul>
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://twitter.com"><FaFacebookF /></a>
-        <a href="https://linkedin.com"><FaFacebookF/></a>
+        <a href="https://www.facebook.com/profile.php?id=100079977856327"><FaFacebookF/></a>
+        <a href="https://www.linkedin.com/in/faustin-nshimiyimana842/"><FaLinkedin /></a>
+        <a href="https://x.com/Nshimiy58198795"><FaXTwitter/></a>
       </div>
 
       <div className="footer__copyright">

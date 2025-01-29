@@ -1,38 +1,46 @@
-import React from 'react'
+
 import {Autoplay, Navigation, Pagination} from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './testemonials.css'
 import CLI1 from '../../assets/mg2.png'
-import CLI2 from '../../assets/image3.jpg'
+import CLI2 from '../../assets/avatar.svg'
+import { motion } from 'framer-motion';
 
 
 const data = [
   {
-    avatar : CLI1,
-    name: 'Jhon Doe',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem voluptates quisquam perferendis laborum, veritatis magnam optio ipsum placeat quam?',
+    avatar : CLI2,
+    name: 'Client 1',
+    review: 'Unavailable right now',
   },
   {
     avatar : CLI2,
-    name: 'Jhon Doe',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem voluptates quisquam perferendis laborum, veritatis magnam optio ipsum placeat quam?',
-  },
-  {
-    avatar : CLI1,
-    name: 'Jhon Doe',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem voluptates quisquam perferendis laborum, veritatis magnam optio ipsum placeat quam?',
+    name: 'Client 2',
+    review: 'You may be him/her',
   },
   {
     avatar : CLI2,
-    name: 'Jhon Doe',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem voluptates quisquam perferendis laborum, veritatis magnam optio ipsum placeat quam?',
+    name: 'Client 3',
+    review: 'No content available',
+  },
+  {
+    avatar : CLI1,
+    name: 'NSHIMIYIMANA Faustin',
+    review: 'He invested in me to be where I am rght now. I am proud of skills I have already achieved. still in progress',
   },
   
 ]
 function Testemonials() {
   return (
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}  // Ensures it only animates once
+    className="p-6 bg-white shadow-lg rounded-xl"
+  >
     <section id='testimonial'>
       <h5>Review</h5>
       <h2>Testimonials</h2>
@@ -62,6 +70,7 @@ function Testemonials() {
           }
       </Swiper>
     </section>
+    </motion.div>
   )
 }
 

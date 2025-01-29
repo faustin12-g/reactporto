@@ -1,11 +1,9 @@
-import React from 'react'
+
 import './portofolio.css'
-import IMG1 from '../../assets/AI.png'
-import IMG2 from '../../assets/AR.png'
-import IMG3 from '../../assets/image-1.jpg'
+import IMG1 from '../../assets/prop.png'
+import IMG2 from '../../assets/logo.png'
 import IMG4 from '../../assets/TOOGEDA.png'
-import IMG5 from '../../assets/pro.png'
-import IMG6 from '../../assets/image2.jpg'
+import { motion } from 'framer-motion'
 
 
 
@@ -13,54 +11,37 @@ const data = [
   {
     id:1,
     image:IMG1,
-    title: 'AI Chat with book',
-    github:'https://github.com',
-    demo: 'https://dribbble.com'
+    title: 'Online Property Management',
+    github:'https://github.com/Pelino-Courses/improved-property-management-system-with-ui-djangoninjas',
+    demo: 'https://github.com/Pelino-Courses/improved-property-management-system-with-ui-djangoninjas'
 
   },
   {
     id:2,
     image:IMG2,
-    title: 'AR communication trainer',
-    github:'https://github.com',
-    demo: 'https://dribbble.com'
+    title: 'School management online',
+    github:'https://github.com/faustin12-g/Quality-gap',
+    demo: 'https://github.com/faustin12-g/Quality-gap'
 
   },
   {
     id:3,
-    image:IMG3,
-    title: 'Hardware default checking system',
-    github:'https://github.com',
-    demo: 'https://dribbble.com'
-
-  },
-  {
-    id:4,
     image:IMG4,
     title: 'Meet, communicate and train together',
-    github:'https://github.com',
-    demo: 'https://dribbble.com'
-
-  },
-  {
-    id:5,
-    image:IMG5,
-    title: 'Social welfare system',
-    github:'https://github.com',
-    demo: 'https://dribbble.com'
-
-  },
-  {
-    id:6,
-    image:IMG6,
-    title: 'Photo editing App',
-    github:'https://github.com',
-    demo: 'https://dribbble.com'
+    github:'https://github.com/faustin12-g/English_Study_App',
+    demo: 'https://github.com/faustin12-g/English_Study_App'
 
   },
 ]
 function Portofolio() {
   return (
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}  // Ensures it only animates once
+    className="p-6 bg-white shadow-lg rounded-xl"
+  >
     <section id='portofolio'>
       <h5>My Recent Work</h5>
       <h2>Portofolio</h2>
@@ -84,6 +65,7 @@ function Portofolio() {
         }
       </div>
     </section>
+    </motion.div>
   )
 }
 

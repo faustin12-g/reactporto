@@ -1,9 +1,17 @@
-import React from 'react'
+
 import './experience.css'
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
+import { motion } from 'framer-motion';
 
 function Experience() {
   return (
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}  // Ensures it only animates once
+    className="p-6 bg-white shadow-lg rounded-xl"
+  >
     <section id='experience'>
       <h5>Skills I have</h5>
       <h2>My Experience</h2>
@@ -75,33 +83,9 @@ function Experience() {
             <article className='experience__details '>
               <TbRosetteDiscountCheckFilled className='experience__details-icon'/>
               <div>
-              <h4>PHP</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-
-            </article>
-            <article className='experience__details '>
-              <TbRosetteDiscountCheckFilled className='experience__details-icon'/>
-              <div>
               <h4>Python</h4>
               <small className='text-light'>Intermediate</small>
               </div>
-
-            </article>
-            <article className='experience__details '>
-              <TbRosetteDiscountCheckFilled className='experience__details-icon'/>
-              <div>
-              <h4>mangoDB</h4>
-              <small className='text-light'>Experienced</small>
-
-              </div>
-            </article>
-            <article className='experience__details '>
-              <TbRosetteDiscountCheckFilled className='experience__details-icon'/>
-             <div>
-             <h4>Node.js</h4>
-              <small className='text-light'>Intermediate</small>
-             </div>
 
             </article>
             <article className='experience__details '>
@@ -116,6 +100,7 @@ function Experience() {
         </div>
       </div>
     </section>
+    </motion.div>
   )
 }
 

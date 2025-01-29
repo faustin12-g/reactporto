@@ -79,3 +79,9 @@ header{
         display: none;
     }
   }
+
+  @media screen and (max-width:450px){
+    header{
+        height: 100vh;
+    }
+}

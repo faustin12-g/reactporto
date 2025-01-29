@@ -1,4 +1,4 @@
-import React from 'react'
+import { motion } from 'framer-motion'
 import './contact.css'
 import { MdOutlineEmail } from 'react-icons/md'
 import { RiMessengerLine } from 'react-icons/ri'
@@ -6,10 +6,15 @@ import { BsWhatsapp } from 'react-icons/bs'
 
 
 
-const send = document.getElementById('send');
-
 function Contact() {
   return (
+    <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+    viewport={{ once: true }}  // Ensures it only animates once
+    className="p-6 bg-white shadow-lg rounded-xl"
+  >
     <section id='contact'>
        <h5>Get in touch</h5>
        <h2>Contact me</h2>
@@ -40,7 +45,8 @@ function Contact() {
         <a href="https://api.whatsapp.com/send?pnone+250784291604" target='__blank'>Send a Message</a>
         </article>
         </div>
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off" target="_top">
+          <input type="hidden" name="access_key" value="dab53f7c-aa02-4afd-97fa-1afeb66cc55a" />
           <input type="text" name='name' placeholder="What's your name?" required/>
           <input type="email" name='email' placeholder='Your Email?' required/>
           <textarea name="message" rows="7" placeholder='Your Message?'></textarea>
@@ -48,6 +54,7 @@ function Contact() {
         </form>
        </div>
     </section>
+    </motion.div>
   )
 }
 
