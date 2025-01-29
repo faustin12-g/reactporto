@@ -1,4 +1,3 @@
-import React from 'react'
 import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/mg2.png'

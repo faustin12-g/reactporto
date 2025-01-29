@@ -1,4 +1,3 @@
-import React from 'react'
 import './nav.css'
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";

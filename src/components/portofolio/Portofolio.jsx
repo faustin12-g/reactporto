@@ -1,4 +1,3 @@
-
 import './portofolio.css'
 import IMG1 from '../../assets/prop.png'
 import IMG2 from '../../assets/logo.png'

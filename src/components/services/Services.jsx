@@ -1,4 +1,3 @@
-
 import './services.css'
 import { BiCheck } from 'react-icons/bi'
 import { motion } from 'framer-motion'

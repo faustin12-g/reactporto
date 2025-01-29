@@ -1,4 +1,3 @@
-
 import CV from '../../assets/FaustinCV=3.pdf'
 import { motion } from 'framer-motion'
 

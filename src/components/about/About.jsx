@@ -1,4 +1,3 @@
-import React from 'react'
 import './about.css'
 import ME from '../../assets/image4.jpg'
 import { FaAward } from "react-icons/fa";
@@ -43,7 +42,7 @@ function About() {
             </article>
           </div>
           <p>I am a full-stack developer specializing in React, Tailwind CSS, and Django. I build modern, responsive websites and web applications with clean designs and smooth user experiences. From frontend styling to backend logic, I ensure everything works seamlessly. I also offer UI/UX design services, focusing on user-friendly interfaces and efficient workflows.</p>
-        <a href="#contact" className='btn btn-primary'>Let's talk</a>
+        <a href="#contact" className='btn btn-primary'>Let us talk</a>
         </div>
         
       </div>
