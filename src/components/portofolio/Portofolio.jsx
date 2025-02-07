@@ -11,8 +11,8 @@ const data = [
     id:1,
     image:IMG1,
     title: 'Online Property Management',
-    github:'https://github.com/Pelino-Courses/improved-property-management-system-with-ui-djangoninjas',
-    demo: 'https://www.veed.io/view/5f2a9d5a-abe9-4552-b88d-7b1f758bb828?panel=share'
+    github:'https://github.com/faustin12-g/improved-property-management-system-with-ui-djangoninjas',
+    demo: 'https://faustin12.pythonanywhere.com/'
 
   },
   {
