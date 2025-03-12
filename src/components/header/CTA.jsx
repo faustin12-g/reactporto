@@ -1,4 +1,4 @@
-import CV from '../../assets/FaustinCV=3.pdf'
+import CV from '../../assets/Faustin_CV.pdf'
 import { motion } from 'framer-motion'
 
 const CTA = () => {
@@ -11,7 +11,7 @@ const CTA = () => {
     className="p-6 bg-white shadow-lg rounded-xl"
   >
       <div className='cta'>
-          <a href={CV} download className='btn'>Download CV</a>
+         <a href={CV} target="_blank" rel="noopener noreferrer" className="btn">View CV</a>
           <a href="#contact" className='btn btn-primary'>Let's talk</a>
         
       </div>

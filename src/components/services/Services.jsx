@@ -12,8 +12,8 @@ function Services() {
     className="p-6 bg-white shadow-lg rounded-xl"
   >
     <section id='services'>
-     <h5>What I offer</h5>
-     <h2>Services</h2>
+     <h5>What I Can do</h5>
+     <h2>Skills</h2>
      <div className="container services__container">
       <article className='service '>
         <div className="service__head">

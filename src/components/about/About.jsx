@@ -1,5 +1,5 @@
 import './about.css'
-import ME from '../../assets/image4.jpg'
+import ME from '../../assets/prof_pic.jpg'
 import { FaAward } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { IoLibrary } from "react-icons/io5";
