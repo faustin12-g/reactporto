@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
+
 .service{
     background-color: var(--color-bg-variant);
     border-radius: 0 0 2rem 2rem;

@@ -58,6 +58,7 @@
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
+
 @media screen and (max-width:1024px) {
     .about__container{
         grid-template-columns: 1fr;
