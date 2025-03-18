@@ -18,7 +18,7 @@ const data = [
   {
     id:2,
     image:IMG2,
-    title: 'School management online',
+    title: 'All-in-one School management system',
     github:'https://github.com/faustin12-g/Quality-gap',
     demo: 'https://quality-gap.vercel.app/'
 
