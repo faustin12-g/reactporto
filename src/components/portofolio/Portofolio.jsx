@@ -2,6 +2,7 @@ import './portofolio.css'
 import IMG1 from '../../assets/prop.png'
 import IMG2 from '../../assets/QG_logo.png'
 import IMG4 from '../../assets/TOOGEDA.png'
+import IMG3 from '../../assets/IMG4.png'
 import { motion } from 'framer-motion'
 
 
