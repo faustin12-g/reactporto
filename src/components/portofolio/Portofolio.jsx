@@ -3,6 +3,7 @@ import IMG1 from '../../assets/prop.png'
 import IMG2 from '../../assets/QG_logo.png'
 import IMG4 from '../../assets/TOOGEDA.png'
 import IMG3 from '../../assets/IMG4.png'
+import IMG5 from './../../assets/IMG5.svg'
 import { motion } from 'framer-motion'
 
 
@@ -38,6 +39,14 @@ const data = [
     title: 'Complaints and feedback management system',
     github:'https://github.com/faustin12-g/uk',
     demo: 'https://uksonga.pythonanywhere.com/'
+
+  },
+    {
+    id:5,
+    image:IMG5,
+    title: 'Penn University digital campus',
+    github:'https://github.com/faustin12-g/penn',
+    demo: 'https://penn-theta.vercel.app/'
 
   },
 ]
