@@ -71,6 +71,37 @@
   );
 }
 
+.blog-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.blog-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.blog-card:hover .blog-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.blog-category-badge {
+  position: absolute;
+  top: var(--spacing-lg);
+  right: var(--spacing-lg);
+  background: var(--color-primary);
+  color: var(--color-dark);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 6px;
+  font-size: var(--fs-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .blog-content {
   padding: var(--spacing-2xl);
   flex: 1;
@@ -122,6 +153,69 @@
   transform: translateX(5px);
 }
 
+/* Newsletter CTA */
+.blog-cta {
+  padding: var(--spacing-4xl) 0;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(255, 107, 157, 0.05));
+  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.newsletter-box {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: var(--spacing-3xl);
+  background: rgba(45, 45, 53, 0.5);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 12px;
+}
+
+.newsletter-box h2 {
+  color: var(--color-light);
+  margin-bottom: var(--spacing-md);
+  font-size: var(--fs-h3);
+}
+
+.newsletter-box p {
+  color: #a8a8b3;
+  margin-bottom: var(--spacing-2xl);
+  font-size: var(--fs-body);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 250px;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: rgba(15, 15, 30, 0.5);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+  color: var(--color-light);
+  font-size: var(--fs-body-small);
+  transition: all var(--transition-base);
+}
+
+.newsletter-form input::placeholder {
+  color: #8a8a94;
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.1);
+}
+
+.newsletter-form button {
+  padding: var(--spacing-md) var(--spacing-2xl);
+}
+
 @media (max-width: 768px) {
   .blog-hero {
     min-height: 300px;
@@ -134,6 +228,14 @@
   .blog-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-2xl);
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    min-width: 100%;
   }
 
   .blog-image {
