@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { BsSun, BsMoon } from 'react-icons/bs';
 import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -48,6 +49,16 @@ const Navigation = () => {
         <Link to="/contact" className="nav-cta">
           Start Project
         </Link>
+
+        {/* Theme Toggle */}
+        <button
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label="Toggle theme"
+          title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+          {theme === 'dark' ? <BsSun size={20} /> : <BsMoon size={20} />}
+        </button>
 
         {/* Mobile Menu Toggle */}
         <button

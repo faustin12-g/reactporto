@@ -7,6 +7,12 @@
   margin-top: var(--spacing-4xl);
   position: relative;
   overflow: hidden;
+  transition: background var(--transition-base), border-color var(--transition-base);
+}
+
+[data-theme="light"] .footer {
+  background: linear-gradient(180deg, rgba(248, 248, 252, 0.6) 0%, rgba(240, 240, 245, 0.9) 100%);
+  border-top: 2px solid rgba(0, 212, 255, 0.1);
 }
 
 .footer::before {

@@ -9,6 +9,12 @@
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 212, 255, 0.1);
   padding: var(--spacing-xl) 0;
+  transition: background-color var(--transition-base), border-color var(--transition-base);
+}
+
+[data-theme="light"] .navigation {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.15);
 }
 
 .nav-container {
@@ -98,6 +104,28 @@
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
   opacity: 0.9;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 212, 255, 0.1);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  color: var(--color-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: var(--color-primary);
+  transform: scale(1.05);
 }
 
 /* Mobile Menu Toggle */

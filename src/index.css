@@ -69,6 +69,35 @@
   --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.15);
 }
 
+/* Light Mode Theme */
+[data-theme="light"] {
+  /* Background & Primary Colors */
+  --color-dark: #ffffff;
+  --color-darker: #f8f8fc;
+  --color-light: #0f0f1e;
+  
+  /* Text & Grayscale */
+  --color-gray-900: #0f0f1e;
+  --color-gray-800: #2d2d35;
+  --color-gray-700: #424251;
+  --color-gray-600: #666;
+  --color-gray-500: #999;
+  --color-gray-300: #e0e0e0;
+  --color-gray-200: #f0f0f0;
+  --color-gray-100: #f8f8f8;
+  
+  /* Shadows - lighter for light mode */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.1);
+}
+
+html {
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
 /* Reset & Base */
 *,
 *::before,
@@ -82,6 +111,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-base), color var(--transition-base);
 }
 
 body {
@@ -90,6 +120,15 @@ body {
   color: var(--color-gray-900);
   line-height: var(--lh-normal);
   overflow-x: hidden;
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* Smooth theme transitions for all elements */
+section, div, a, button, input, textarea {
+  transition: background-color var(--transition-base), 
+              border-color var(--transition-base), 
+              color var(--transition-base), 
+              box-shadow var(--transition-base);
 }
 
 /* Typography - Headings */
@@ -306,6 +345,87 @@ button {
   50% {
     box-shadow: 0 0 40px rgba(0, 212, 255, 0.6);
   }
+}
+
+/* Light Mode Comprehensive Styling */
+[data-theme="light"] {
+  /* Cards and containers */
+  --card-bg: rgba(240, 240, 245, 0.8);
+  --card-border: rgba(0, 212, 255, 0.15);
+  --card-hover-bg: rgba(230, 230, 240, 0.9);
+}
+
+[data-theme="light"] section,
+[data-theme="light"] .hero-section,
+[data-theme="light"] .featured-preview,
+[data-theme="light"] .cta-section,
+[data-theme="light"] .blog-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f8fc 100%) !important;
+  color: #0f0f1e !important;
+}
+
+[data-theme="light"] .featured-card,
+[data-theme="light"] .blog-card,
+[data-theme="light"] .contact-option,
+[data-theme="light"] .contact-form-wrapper,
+[data-theme="light"] .contact-info,
+[data-theme="light"] .stat,
+[data-theme="light"] .service-card {
+  background: rgba(240, 240, 245, 0.6) !important;
+  border-color: rgba(0, 212, 255, 0.2) !important;
+}
+
+[data-theme="light"] .featured-card:hover,
+[data-theme="light"] .blog-card:hover,
+[data-theme="light"] .contact-option:hover,
+[data-theme="light"] .service-card:hover,
+[data-theme="light"] .stat:hover {
+  background: rgba(230, 230, 240, 0.8) !important;
+  border-color: rgba(0, 212, 255, 0.3) !important;
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  color: #0f0f1e !important;
+}
+
+[data-theme="light"] p,
+[data-theme="light"] .subtitle,
+[data-theme="light"] .excerpt {
+  color: #424251 !important;
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(0, 212, 255, 0.15) !important;
+  color: #0f0f1e !important;
+}
+
+[data-theme="light"] input::placeholder,
+[data-theme="light"] textarea::placeholder {
+  color: #999 !important;
+}
+
+[data-theme="light"] input:focus,
+[data-theme="light"] textarea:focus {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(0, 212, 255, 0.3) !important;
+  box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.1) !important;
+}
+
+[data-theme="light"] .nav-link,
+[data-theme="light"] .footer-link {
+  color: #424251 !important;
+}
+
+[data-theme="light"] .nav-link:hover,
+[data-theme="light"] .footer-link:hover {
+  color: var(--color-primary) !important;
 }
 
 /* Responsive */
