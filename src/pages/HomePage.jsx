@@ -6,6 +6,7 @@ import PortfyImage from '../assets/Portfy.png';
 import SafeBodaImage from '../assets/SafeBoda.png';
 import UDSImage from '../assets/uds.png';
 import HomeImage from '../assets/Home.png';
+import CVFile from '../assets/Faustin_CV.pdf';
 
 const HomePage = () => {
   const [expandedId, setExpandedId] = useState(null);
@@ -78,9 +79,9 @@ const HomePage = () => {
             </motion.p>
 
             <motion.div variants={itemVariants} className="hero-cta">
-              <Link to="/projects" className="btn btn-primary">
-                View My Work
-              </Link>
+              <a href={CVFile} target="_blank" rel="noreferrer" className="btn btn-primary">
+                View My CV
+              </a>
               <Link to="/contact" className="btn btn-outline">
                 Get In Touch
               </Link>
