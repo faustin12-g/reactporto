@@ -5,6 +5,7 @@ import './HomePage.css';
 import PortfyImage from '../assets/Portfy.png';
 import SafeBodaImage from '../assets/SafeBoda.png';
 import UDSImage from '../assets/uds.png';
+import HomeImage from '../assets/Home.png';
 
 const HomePage = () => {
   const [expandedId, setExpandedId] = useState(null);
@@ -84,6 +85,16 @@ const HomePage = () => {
                 Get In Touch
               </Link>
             </motion.div>
+          </motion.div>
+
+          {/* Professional Photo */}
+          <motion.div
+            className="hero-image"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
+            <img src={HomeImage} alt="Faustin - Designer & Developer" className="profile-photo" />
           </motion.div>
 
           {/* Animated Background */}

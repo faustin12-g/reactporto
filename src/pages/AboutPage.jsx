@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutPage.css';
+import AboutImage from '../assets/About.jpeg';
 
 const AboutPage = () => {
   return (
@@ -33,9 +34,21 @@ const AboutPage = () => {
             </motion.div>
 
             <motion.div
-              className="about-stats"
+              className="about-image-wrapper"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <img src={AboutImage} alt="Faustin" className="about-image" />
+            </motion.div>
+          </div>
+
+          <div className="about-stats-wrapper">
+            <motion.div
+              className="about-stats"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
@@ -52,7 +65,7 @@ const AboutPage = () => {
                 <p>Years Experience</p>
               </div>
             </motion.div>
-          </div>
+            </div>
         </div>
       </section>
     </div>
