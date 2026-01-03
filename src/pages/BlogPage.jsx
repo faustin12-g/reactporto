@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './BlogPage.css';
 import Blog1 from '../assets/blog-1-design-systems.jpg';
@@ -9,6 +9,46 @@ import Blog5 from '../assets/blog-5-digital-strategy.svg';
 import Blog6 from '../assets/blog-6-web-trends.png.webp';
 
 const BlogPage = () => {
+  const [email, setEmail] = useState('');
+  const [subscriptionStatus, setSubscriptionStatus] = useState(''); // 'loading', 'success', 'error'
+  const [subscriptionMessage, setSubscriptionMessage] = useState('');
+
+  const handleNewsletterSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!email) return;
+
+    setSubscriptionStatus('loading');
+    
+    try {
+      // Call backend API (works locally in dev, perfect on Vercel in production)
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubscriptionStatus('success');
+        setSubscriptionMessage(data.message || 'Thanks for subscribing!');
+        setEmail('');
+        setTimeout(() => setSubscriptionStatus(''), 3000);
+      } else {
+        setSubscriptionStatus('error');
+        setSubscriptionMessage(data.error || 'Subscription failed. Please try again.');
+        setTimeout(() => setSubscriptionStatus(''), 3000);
+      }
+    } catch (error) {
+      console.error('Newsletter subscription error:', error);
+      setSubscriptionStatus('error');
+      setSubscriptionMessage('Connection error. Please try again later.');
+      setTimeout(() => setSubscriptionStatus(''), 3000);
+    }
+  };
   const articles = [
     {
       id: 1,
@@ -127,10 +167,33 @@ const BlogPage = () => {
           >
             <h2>Stay Updated with Latest Insights</h2>
             <p>Subscribe to get the latest articles delivered to your inbox</p>
-            <form className="newsletter-form">
-              <input type="email" placeholder="Enter your email" required />
-              <button type="submit" className="btn btn-primary">Subscribe</button>
+            <form className="newsletter-form" onSubmit={handleNewsletterSubmit}>
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={subscriptionStatus === 'loading'}
+                required 
+              />
+              <button 
+                type="submit" 
+                className="btn btn-primary"
+                disabled={subscriptionStatus === 'loading' || !email}
+              >
+                {subscriptionStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
+              </button>
             </form>
+            {subscriptionStatus && (
+              <motion.div
+                className={`subscription-message subscription-${subscriptionStatus}`}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+              >
+                {subscriptionMessage}
+              </motion.div>
+            )}
           </motion.div>
         </div>
       </section>
