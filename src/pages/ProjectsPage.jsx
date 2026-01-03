@@ -8,6 +8,7 @@ import PortfyImage from '../assets/Portfy.png';
 import PennImage from '../assets/Penn.svg';
 import NexusImage from '../assets/Nexus.png';
 import UDSImage from '../assets/uds.png';
+import PageMeta from '../components/PageMeta';
 
 const ProjectsPage = () => {
   const [expandedId, setExpandedId] = useState(null);
@@ -82,16 +83,23 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div className="projects-page">
-      <motion.section
-        className="projects-hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        <div className="container">
-          <h1>My Projects</h1>
-          <p>Premium web design and development case studies</p>
-        </div>
+    <>
+      <PageMeta
+        title="Projects | Faustin Nshimiyimana - Web Development & Design"
+        description="Explore Faustin Nshimiyimana's portfolio of innovative web projects. Full-stack development, React applications, and UI/UX design work."
+        keywords="projects, portfolio, web development, React, Django, UI/UX design, case studies"
+        url="https://nshimiyimana.me/projects"
+      />
+      <div className="projects-page">
+        <motion.section
+          className="projects-hero"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <div className="container">
+            <h1>My Projects</h1>
+            <p>Premium web design and development case studies</p>
+          </div>
       </motion.section>
 
       <section className="projects-grid-section">
@@ -146,7 +154,8 @@ const ProjectsPage = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

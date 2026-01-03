@@ -4,6 +4,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
 import { BsWhatsapp } from 'react-icons/bs';
 import './ContactPage.css';
+import PageMeta from '../components/PageMeta';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -18,20 +19,27 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact-page">
-      <motion.section
-        className="contact-hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        <div className="container">
-          <h1>Let's Connect</h1>
-          <p>Ready to start your next project? Let's talk.</p>
-        </div>
-      </motion.section>
+    <>
+      <PageMeta
+        title="Contact Faustin Nshimiyimana | Let's Work Together"
+        description="Get in touch with Faustin Nshimiyimana. Let's discuss your next project. Email, Messenger, or WhatsApp."
+        keywords="contact, get in touch, hire developer, web design, development services"
+        url="https://nshimiyimana.me/contact"
+      />
+      <div className="contact-page">
+        <motion.section
+          className="contact-hero"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <div className="container">
+            <h1>Let's Connect</h1>
+            <p>Ready to start your next project? Let's talk.</p>
+          </div>
+        </motion.section>
 
-      <section className="contact-section">
-        <div className="container">
+        <section className="contact-section">
+          <div className="container">
           {/* Contact Options */}
           <div className="contact-options">
             <motion.article
@@ -156,7 +164,8 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

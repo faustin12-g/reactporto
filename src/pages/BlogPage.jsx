@@ -7,6 +7,7 @@ import Blog3 from '../assets/blog-3-performance.png';
 import Blog4 from '../assets/blog-4-accessibility.jpg';
 import Blog5 from '../assets/blog-5-digital-strategy.svg';
 import Blog6 from '../assets/blog-6-web-trends.png.webp';
+import PageMeta from '../components/PageMeta';
 
 const BlogPage = () => {
   const [email, setEmail] = useState('');
@@ -113,20 +114,27 @@ const BlogPage = () => {
   ];
 
   return (
-    <div className="blog-page">
-      <motion.section
-        className="blog-hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        <div className="container">
-          <h1>Blog & Insights</h1>
-          <p>Expert insights on design, development, and digital transformation that will change how you think about digital products</p>
-        </div>
-      </motion.section>
+    <>
+      <PageMeta
+        title="Blog | Faustin Nshimiyimana - Design & Development Insights"
+        description="Read expert insights on web design, development, and digital transformation. Articles by Faustin Nshimiyimana about design systems, UX psychology, performance, and more."
+        keywords="blog, web design, development, design systems, UX psychology, web performance, accessibility"
+        url="https://nshimiyimana.me/blog"
+      />
+      <div className="blog-page">
+        <motion.section
+          className="blog-hero"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <div className="container">
+            <h1>Blog & Insights</h1>
+            <p>Expert insights on design, development, and digital transformation that will change how you think about digital products</p>
+          </div>
+        </motion.section>
 
-      <section className="blog-section">
-        <div className="container">
+        <section className="blog-section">
+          <div className="container">
           <div className="blog-grid">
             {articles.map((article, index) => (
               <motion.article
@@ -197,7 +205,8 @@ const BlogPage = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -2,10 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutPage.css';
 import AboutImage from '../assets/About.jpeg';
+import PageMeta from '../components/PageMeta';
 
 const AboutPage = () => {
   return (
-    <div className="about-page">
+    <>
+      <PageMeta
+        title="About Faustin Nshimiyimana | Full Stack Developer & Designer"
+        description="Learn about Faustin Nshimiyimana's journey, experience, and expertise in full-stack development and UI/UX design. Passionate about creating innovative digital solutions."
+        keywords="Faustin Nshimiyimana, about, experience, full stack developer, UI/UX designer"
+        url="https://nshimiyimana.me/about"
+      />
+      <div className="about-page">
       <motion.section
         className="about-hero"
         initial={{ opacity: 0 }}
@@ -68,7 +76,8 @@ const AboutPage = () => {
             </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

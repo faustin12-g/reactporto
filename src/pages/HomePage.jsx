@@ -7,6 +7,7 @@ import SafeBodaImage from '../assets/SafeBoda.png';
 import UDSImage from '../assets/uds.png';
 import HomeImage from '../assets/Home.png';
 import CVFile from '../assets/Faustin_CV.pdf';
+import PageMeta from '../components/PageMeta';
 
 const HomePage = () => {
   const [expandedId, setExpandedId] = useState(null);
@@ -55,8 +56,15 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="home-page">
-      {/* Hero Section */}
+    <>
+      <PageMeta
+        title="Faustin Nshimiyimana | Full Stack Developer & UI/UX Designer"
+        description="Faustin Nshimiyimana - Full Stack Developer & UI/UX Designer. Professional portfolio showcasing innovative web solutions, creative designs, and full-stack development projects."
+        keywords="Faustin Nshimiyimana, full stack developer, UI/UX designer, web development, React, Django, developer Rwanda"
+        url="https://nshimiyimana.me/"
+      />
+      <div className="home-page">
+        {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-container">
           <motion.div
@@ -71,7 +79,7 @@ const HomePage = () => {
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="hero-title">
-              Creative Designer & Developer
+              Faustin Nshimiyimana <br /> Creative Developer & Designer
             </motion.h1>
 
             <motion.p variants={itemVariants} className="hero-subtitle">
@@ -196,7 +204,8 @@ const HomePage = () => {
           </Link>
         </motion.div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

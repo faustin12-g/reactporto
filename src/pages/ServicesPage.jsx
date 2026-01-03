@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ServicesPage.css';
+import PageMeta from '../components/PageMeta';
 
 const ServicesPage = () => {
   const services = [
@@ -13,15 +14,22 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div className="services-page">
-      <motion.section
-        className="services-hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        <div className="container">
-          <h1>Services</h1>
-          <p>Professional design and development services</p>
+    <>
+      <PageMeta
+        title="Services | Faustin Nshimiyimana - Design & Development"
+        description="Web design, UI/UX design, full-stack development, and branding services by Faustin Nshimiyimana."
+        keywords="web design services, UI/UX design, web development, branding, design services"
+        url="https://nshimiyimana.me/services"
+      />
+      <div className="services-page">
+        <motion.section
+          className="services-hero"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          <div className="container">
+            <h1>Services</h1>
+            <p>Professional design and development services</p>
         </div>
       </motion.section>
 
@@ -46,7 +54,8 @@ const ServicesPage = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
