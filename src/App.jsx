@@ -9,6 +9,8 @@ import ProjectsPage from './pages/ProjectsPage';
 import ServicesPage from './pages/ServicesPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
+import EducationPage from './pages/EducationPage';
+import ExperiencePage from './pages/ExperiencePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/education" element={<EducationPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/blog" element={<BlogPage />} />

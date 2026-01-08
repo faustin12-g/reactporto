@@ -10,6 +10,8 @@ const Navigation = ({ theme, toggleTheme }) => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
+    { name: 'Education', path: '/education' },
+    { name: 'Experience', path: '/experience' },
     { name: 'Projects', path: '/projects' },
     { name: 'Services', path: '/services' },
     { name: 'Blog', path: '/blog' },
