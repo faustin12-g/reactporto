@@ -38,7 +38,6 @@ function Testemonials() {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
     viewport={{ once: true }}  // Ensures it only animates once
-    className="p-6 bg-white shadow-lg rounded-xl"
   >
     <section id='testimonial'>
       <h5>Review</h5>

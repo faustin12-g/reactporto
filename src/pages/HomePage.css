@@ -394,8 +394,9 @@
 .cta-section {
   padding: var(--spacing-4xl) 0;
   text-align: center;
-  background: #f5f5f7;
-  border-top: 1px solid #e8e8ec;
+  background: var(--color-dark);
+  border-top: 1px solid var(--color-gray-700);
+  transition: background-color var(--transition-base), border-color var(--transition-base);
 }
 
 .cta-content h2 {
@@ -405,7 +406,7 @@
 }
 
 .cta-content p {
-  color: #a8a8b3;
+  color: var(--color-gray-600);
   margin-bottom: var(--spacing-2xl);
   max-width: 600px;
   margin-left: auto;

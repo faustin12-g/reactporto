@@ -57,7 +57,6 @@ function Portofolio() {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
     viewport={{ once: true }}  // Ensures it only animates once
-    className="p-6 bg-white shadow-lg rounded-xl"
   >
     <section id='portofolio'>
       <h5>My Recent Work</h5>
