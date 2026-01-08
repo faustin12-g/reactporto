@@ -10,15 +10,15 @@
 :root {
   --color-primary: #00d4ff;
   --color-accent: #ff6b9d;
-  --color-dark: #0f0f1e;
-  --color-darker: #0a0a14;
-  --color-light: #f7f5e6;
-  --color-gray-900: #1a1a1f;
+  --color-dark: #ffffff;
+  --color-darker: #f8f8fc;
+  --color-light: #0f0f1e;
+  --color-gray-900: #0f0f1e;
   --color-gray-800: #2d2d35;
   --color-gray-700: #424251;
   --color-gray-600: #666;
   --color-gray-500: #999;
-  --color-gray-300: #ddd;
+  --color-gray-300: #e0e0e0;
   --color-gray-200: #f0f0f0;
   --color-gray-100: #f8f8f8;
 
@@ -60,6 +60,31 @@
   --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slowest: 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Shadows - lighter for light mode (default) */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.1);
+}
+
+/* Dark Mode Theme */
+[data-theme="dark"] {
+  /* Background & Primary Colors */
+  --color-dark: #0f0f1e;
+  --color-darker: #0a0a14;
+  --color-light: #f7f5e6;
+  
+  /* Text & Grayscale */
+  --color-gray-900: #1a1a1f;
+  --color-gray-800: #2d2d35;
+  --color-gray-700: #424251;
+  --color-gray-600: #666;
+  --color-gray-500: #999;
+  --color-gray-300: #ddd;
+  --color-gray-200: #f0f0f0;
+  --color-gray-100: #f8f8f8;
   
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.12);
@@ -218,7 +243,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--color-primary), var(--color-accent));
+  background: #1f1f2e;
   border-radius: 6px;
 }
 
@@ -360,7 +385,7 @@ button {
 [data-theme="light"] .featured-preview,
 [data-theme="light"] .cta-section,
 [data-theme="light"] .blog-section {
-  background: linear-gradient(180deg, #ffffff 0%, #f8f8fc 100%) !important;
+  background: #f5f5f7 !important;
   color: #0f0f1e !important;
 }
 

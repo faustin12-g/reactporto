@@ -1,7 +1,7 @@
 /* AboutPage Styles */
 .about-page {
   padding-top: 80px;
-  background: linear-gradient(180deg, var(--color-dark) 0%, var(--color-darker) 100%);
+  background: #0f0f1b;
 }
 
 .about-hero {

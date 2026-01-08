@@ -25,16 +25,6 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4>Resources</h4>
-            <ul className="footer-links">
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
             <h4>Connect</h4>
             <ul className="footer-links">
               <li><a href="https://www.linkedin.com/in/faustin-nshimiyimana-928a6237b/" target="_blank" rel="noreferrer">LinkedIn</a></li>

@@ -11,12 +11,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 212, 255, 0.05) 0%,
-    rgba(255, 107, 157, 0.05) 100%
-  );
+  border-bottom: 1px solid rgba(31, 31, 46, 0.3);
+  background: #f5f5f7;
 }
 
 .services-hero .container {
@@ -26,15 +22,12 @@
 .services-hero h1 {
   font-size: var(--fs-h1);
   margin-bottom: var(--spacing-lg);
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #1f1f2e;
 }
 
 .services-hero p {
   font-size: var(--fs-body);
-  color: #a8a8b3;
+  color: #666666;
 }
 
 .services-section {
@@ -64,11 +57,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 212, 255, 0.05) 0%,
-    transparent 100%
-  );
+  background: transparent;
   opacity: 0;
   transition: opacity var(--transition-base);
   pointer-events: none;
