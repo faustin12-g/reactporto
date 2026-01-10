@@ -57,7 +57,7 @@
 
 .blog-image {
   height: 250px;
-  background: #e8e8ec;
+  background: #2d2d35;
 }
 
 .blog-image-wrapper {
@@ -310,4 +310,13 @@
   background: var(--color-dark);
   border-top: 1px solid rgba(0, 212, 255, 0.1);
   border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+/* Light Mode Styles */
+[data-theme="light"] .blog-image {
+  background: #f5f5f7;
+}
+
+[data-theme="light"] .blog-image-wrapper {
+  background: #ffffff;
 }
