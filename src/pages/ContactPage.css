@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-bottom: 1px solid rgba(31, 31, 46, 0.3);
-  background: #f5f5f7;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  background: #0f0f1b;
 }
 
 .contact-hero .container {
@@ -22,12 +22,12 @@
 .contact-hero h1 {
   font-size: var(--fs-h1);
   margin-bottom: var(--spacing-lg);
-  color: #1f1f2e;
+  color: var(--color-light);
 }
 
 .contact-hero p {
   font-size: var(--fs-body);
-  color: #666666;
+  color: var(--color-gray-500);
 }
 
 .contact-section {
