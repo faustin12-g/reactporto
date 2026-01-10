@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BsSun, BsMoon } from 'react-icons/bs';
 import './Navigation.css';
 
 const Navigation = ({ theme, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -17,6 +18,22 @@ const Navigation = ({ theme, toggleTheme }) => {
     { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ];
+
+  // Scroll to top when location changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  // Close mobile menu when location changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+  const isActive = (path) => {
+    if (path === '/' && location.pathname === '/') return true;
+    if (path !== '/' && location.pathname === path) return true;
+    return false;
+  };
 
   return (
     <motion.nav
@@ -38,7 +55,7 @@ const Navigation = ({ theme, toggleTheme }) => {
             <Link
               key={item.path}
               to={item.path}
-              className="nav-link"
+              className={`nav-link ${isActive(item.path) ? 'active' : ''}`}
               onClick={() => setIsOpen(false)}
             >
               <span className="nav-link-text">{item.name}</span>
