@@ -16,7 +16,7 @@
   justify-content: center;
   padding: var(--spacing-4xl) var(--spacing-xl);
   background: #0f0f1b;
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid #1a3540;
 }
 
 .education-hero-content {
@@ -44,7 +44,7 @@
   text-align: center;
   margin-bottom: var(--spacing-4xl);
   padding-bottom: var(--spacing-2xl);
-  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+  border-bottom: 2px solid #1e4050;
 }
 
 .section-icon {
@@ -78,12 +78,11 @@
 }
 
 .education-card {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(255, 107, 157, 0.05) 100%);
-  border: 1px solid rgba(0, 212, 255, 0.15);
+  background: #1a1a28;
+  border: 1px solid #1f3f4e;
   border-radius: 1.2rem;
   padding: var(--spacing-2xl);
   transition: all var(--transition-base);
-  backdrop-filter: blur(10px);
 }
 
 .education-card:hover {
@@ -95,7 +94,7 @@
 .education-card-header {
   margin-bottom: var(--spacing-lg);
   padding-bottom: var(--spacing-lg);
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid #1a3540;
 }
 
 .education-card-info h3 {
@@ -119,13 +118,13 @@
 
 .graduation-date {
   display: inline-block;
-  background: rgba(0, 212, 255, 0.1);
+  background: #162d35;
   color: var(--color-primary);
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: 0.5rem;
   font-size: var(--fs-small);
   font-weight: 600;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid #1e4050;
 }
 
 .education-description {
@@ -175,8 +174,8 @@
 }
 
 .certificate-card {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(255, 107, 157, 0.05) 100%);
-  border: 1px solid rgba(0, 212, 255, 0.15);
+  background: #1a1a28;
+  border: 1px solid #1f3f4e;
   border-radius: 1.2rem;
   padding: var(--spacing-2xl);
   text-align: center;
@@ -184,7 +183,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  backdrop-filter: blur(10px);
 }
 
 .certificate-card:hover {
@@ -202,7 +200,7 @@
   justify-content: center;
   width: 80px;
   height: 80px;
-  background: rgba(0, 212, 255, 0.1);
+  background: #162d35;
   border-radius: 50%;
 }
 
@@ -228,12 +226,12 @@
 }
 
 .skill-tag {
-  background: rgba(0, 212, 255, 0.1);
+  background: #162d35;
   color: var(--color-primary);
   padding: var(--spacing-xs) var(--spacing-md);
   border-radius: 2rem;
   font-size: var(--fs-small);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid #1e4050;
   transition: all var(--transition-base);
 }
 
@@ -246,7 +244,7 @@
 .education-cta {
   padding: var(--spacing-4xl) 0;
   background: var(--color-dark);
-  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  border-top: 1px solid #1a3540;
   text-align: center;
 }
 
@@ -273,8 +271,8 @@
 }
 
 [data-theme="light"] .education-hero {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 107, 157, 0.08) 100%);
-  border-bottom-color: rgba(0, 212, 255, 0.1);
+  background: #eaf4f8;
+  border-bottom-color: #8ad4e6;
 }
 
 [data-theme="light"] .education-hero h1,
@@ -284,8 +282,8 @@
 
 [data-theme="light"] .education-card,
 [data-theme="light"] .certificate-card {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 107, 157, 0.08) 100%);
-  border-color: rgba(0, 212, 255, 0.2);
+  background: #eaf4f8;
+  border-color: #8ad4e6;
 }
 
 [data-theme="light"] .education-card:hover,

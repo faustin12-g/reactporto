@@ -2,7 +2,7 @@
 
 .footer {
   background: #0f0f1b;
-  border-top: 2px solid rgba(31, 31, 46, 0.3);
+  border-top: 2px solid #1f1f2e;
   padding: var(--spacing-4xl) 0 var(--spacing-3xl);
   margin-top: var(--spacing-4xl);
   position: relative;
@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: rgba(31, 31, 46, 0.3);
+  background: #1f1f2e;
 }
 
 .footer-content {
@@ -31,7 +31,7 @@
   gap: var(--spacing-3xl);
   margin-bottom: var(--spacing-3xl);
   padding-bottom: var(--spacing-3xl);
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid #1a3540;
   position: relative;
   z-index: 1;
 }

@@ -16,7 +16,7 @@
   justify-content: center;
   padding: var(--spacing-4xl) var(--spacing-xl);
   background: #0f0f1b;
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid #1a3540;
 }
 
 .experience-hero-content {
@@ -44,7 +44,7 @@
   text-align: center;
   margin-bottom: var(--spacing-4xl);
   padding-bottom: var(--spacing-2xl);
-  border-bottom: 2px solid rgba(0, 212, 255, 0.2);
+  border-bottom: 2px solid #1e4050;
 }
 
 .section-icon {
@@ -84,7 +84,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, rgba(0, 212, 255, 0.5), transparent);
+  background: linear-gradient(to bottom, #00d4ff, #0f0f1b);
 }
 
 .timeline-item {
@@ -141,12 +141,11 @@
 }
 
 .experience-card {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(255, 107, 157, 0.05) 100%);
-  border: 1px solid rgba(0, 212, 255, 0.15);
+  background: #1a1a28;
+  border: 1px solid #1f3f4e;
   border-radius: 1.2rem;
   padding: var(--spacing-2xl);
   transition: all var(--transition-base);
-  backdrop-filter: blur(10px);
 }
 
 .experience-card:hover {
@@ -178,21 +177,21 @@
 }
 
 .badge-current {
-  background: rgba(45, 212, 191, 0.2);
+  background: #1b3d3a;
   color: var(--color-emerald);
-  border: 1px solid rgba(45, 212, 191, 0.3);
+  border: 1px solid #2a5550;
 }
 
 .badge-contract {
-  background: rgba(0, 212, 255, 0.2);
+  background: #1a3a45;
   color: var(--color-primary);
-  border: 1px solid rgba(0, 212, 255, 0.3);
+  border: 1px solid #1e4d5e;
 }
 
 .badge-internship {
-  background: rgba(255, 107, 157, 0.2);
+  background: #3d1a28;
   color: var(--color-accent);
-  border: 1px solid rgba(255, 107, 157, 0.3);
+  border: 1px solid #5e2a3d;
 }
 
 .company-info {
@@ -212,7 +211,7 @@
   gap: var(--spacing-sm);
   margin-bottom: var(--spacing-lg);
   padding-bottom: var(--spacing-lg);
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid #1a3540;
 }
 
 .meta-item {
@@ -265,12 +264,12 @@
 }
 
 .skill-badge {
-  background: rgba(0, 212, 255, 0.1);
+  background: #162d35;
   color: var(--color-primary);
   padding: var(--spacing-xs) var(--spacing-md);
   border-radius: 2rem;
   font-size: var(--fs-small);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid #1e4050;
   transition: all var(--transition-base);
 }
 
@@ -292,14 +291,13 @@
 }
 
 .project-card {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(255, 107, 157, 0.05) 100%);
-  border: 1px solid rgba(0, 212, 255, 0.15);
+  background: #1a1a28;
+  border: 1px solid #1f3f4e;
   border-radius: 1.2rem;
   padding: var(--spacing-2xl);
   transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(10px);
 }
 
 .project-card:hover {
@@ -360,7 +358,7 @@
 .project-tech {
   margin-top: auto;
   padding-top: var(--spacing-lg);
-  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  border-top: 1px solid #1a3540;
 }
 
 .project-tech h5 {
@@ -378,12 +376,12 @@
 }
 
 .tech-tag {
-  background: rgba(0, 212, 255, 0.1);
+  background: #162d35;
   color: var(--color-primary);
   padding: var(--spacing-xs) var(--spacing-md);
   border-radius: 0.5rem;
   font-size: var(--fs-small);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid #1e4050;
   transition: all var(--transition-base);
 }
 
@@ -396,7 +394,7 @@
 .experience-cta {
   padding: var(--spacing-4xl) 0;
   background: var(--color-dark);
-  border-top: 1px solid rgba(0, 212, 255, 0.1);
+  border-top: 1px solid #1a3540;
   text-align: center;
 }
 
@@ -423,8 +421,8 @@
 }
 
 [data-theme="light"] .experience-hero {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 107, 157, 0.08) 100%);
-  border-bottom-color: rgba(0, 212, 255, 0.1);
+  background: #eaf4f8;
+  border-bottom-color: #8ad4e6;
 }
 
 [data-theme="light"] .experience-hero h1,
@@ -434,8 +432,8 @@
 
 [data-theme="light"] .experience-card,
 [data-theme="light"] .project-card {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 107, 157, 0.08) 100%);
-  border-color: rgba(0, 212, 255, 0.2);
+  background: #eaf4f8;
+  border-color: #8ad4e6;
 }
 
 [data-theme="light"] .experience-card:hover,

@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+  border-bottom: 1px solid #1a3540;
   background: #0f0f1b;
 }
 
@@ -42,8 +42,8 @@
 
 .service-card {
   padding: var(--spacing-3xl);
-  background: rgba(45, 45, 53, 0.5);
-  border: 1px solid rgba(0, 212, 255, 0.1);
+  background: #2d2d35;
+  border: 1px solid #1a3540;
   border-radius: 12px;
   transition: all var(--transition-base);
   position: relative;
