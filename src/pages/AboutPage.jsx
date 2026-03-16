@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutPage.css';
-import AboutImage from '../assets/About.jpeg';
+import AboutImage from '../assets/About.png';
 import PageMeta from '../components/PageMeta';
 
 const AboutPage = () => {
